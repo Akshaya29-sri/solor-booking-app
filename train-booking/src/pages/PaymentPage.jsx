@@ -17,12 +17,12 @@ const data = await response.json();
 
 if (data.url) {
 // ✅ Save booking data before redirect
-sessionStorage.setItem('bookingData', JSON.stringify({
-train,
-passengers,
-passengerInfo,
-total: passengers * 49
-}));
+// sessionStorage.setItem('bookingData', JSON.stringify({
+// train,
+// passengers,
+// passengerInfo,
+// total: passengers * 49
+// }));
 
 // ✅ Redirect to Stripe Checkout
 window.location.href = data.url;
@@ -30,7 +30,7 @@ window.location.href = data.url;
 alert('Error: No Checkout URL received');
 }
 } catch (err) {
-alert('Checkout error: ' + err.message);
+alert(`Checkout error: ${err.message}`);
 }
 };
 
