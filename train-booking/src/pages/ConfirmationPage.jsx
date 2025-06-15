@@ -7,7 +7,7 @@ const [bookingRef, setBookingRef] = useState('');
 useEffect(() => {
 const data = sessionStorage.getItem('bookingData');
 if (data) {
-const parsed = JSON.parse(data);
+const parsed = JSON.parse(data);//reads fro session storage and displays all trains and passengerinfo as a receipt
 setBooking(parsed);
 const ref = 'REF' + Math.floor(Math.random() * 1000000);
 setBookingRef(ref);

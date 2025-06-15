@@ -1,6 +1,6 @@
 /* ==== NAVBAR STYLING ==== */
 
-.navbar {
+/* .navbar {
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -41,7 +41,7 @@ font-weight: 500;
 
 .nav-links li a:hover {
 text-decoration: underline;
-}
+} */
 
 
 
@@ -211,7 +211,7 @@ transition: background-color 0.3s ease;
 background-color: #007bb5;
 }
 
-
+/*Booking page */
 
 .booking-container {
 max-width: 600px;
